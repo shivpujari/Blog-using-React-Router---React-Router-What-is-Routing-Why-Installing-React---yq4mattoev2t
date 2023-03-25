@@ -12,7 +12,15 @@ export default function PostList() {
       <div className="posts">
         <h1>Post List</h1>
         <ul>
-          {/* Render a list of Links from the posts object   */}
+
+          {/* Render a list of Links from the posts object   */
+         posts.map((data)=>(
+          <div>
+          <li><Link to={data.path}>{data.name} </Link></li>
+          </div>
+
+         ))
+        }
         </ul>
       </div>
     )
