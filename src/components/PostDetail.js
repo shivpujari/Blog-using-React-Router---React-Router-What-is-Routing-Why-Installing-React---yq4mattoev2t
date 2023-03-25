@@ -5,7 +5,7 @@ export default function PostDetail({ match }) {
   console.log(match, "match")
   return(
 
-<h1>Post Detail: {match.params.id} </h1>
+<h1>Post Detail: {match.params.id}</h1>
 
   )
 
